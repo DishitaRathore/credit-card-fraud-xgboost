@@ -77,15 +77,13 @@ Add the metrics printed by your final notebook run here. Use **test-set** values
 
 | Test metric | Result |
 | --- | ---: |
-| Selected threshold | Add verified value |
-| Average precision (PR-AUC) | Add verified value |
-| ROC-AUC | Add verified value |
-| Precision | Add verified value |
-| Recall | Add verified value |
-| F1 | Add verified value |
-| F2 | Add verified value |
-| False positives | Add verified count |
-| False negatives | Add verified count |
+| Selected threshold | 0.39 |
+| Average precision (PR-AUC) | 0.8341 |
+| ROC-AUC | 0.9668 |
+| Precision | 0.8000 |
+| Recall | 0.8108 |
+| F1 | 0.8054 |
+| F2 | 0.8086 |
 
 Do not compare this result with other projects unless they use the same data version, split strategy, and evaluation method.
 
@@ -126,11 +124,3 @@ The example values above are placeholders to demonstrate the expected input shap
 - Fraud patterns and the costs of false positives and missed fraud change over time. A model needs monitoring, fresh representative data, and periodic evaluation before operational use.
 - The selected threshold reflects the notebook's validation data and metric choice; another institution may need a different threshold based on its review capacity and business costs.
 - The anonymized features limit the ability to explain predictions in terms of real-world transaction characteristics.
-
-## Resume description
-
-After verifying your final test results, you can adapt this project description for your resume:
-
-> Built a credit card fraud detection pipeline with XGBoost on a highly imbalanced transaction dataset; used stratified train/validation/test splits, class weighting, validation-based threshold selection, and held-out evaluation with precision, recall, F-scores, and PR-AUC.
-
-Add a measured result only after confirming it from the final test evaluation, for example: “achieved **[verified recall]** recall at **[verified precision]** precision on a held-out test set.”
